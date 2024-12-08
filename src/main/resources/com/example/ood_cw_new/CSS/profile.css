@@ -1,0 +1,14 @@
+.pane {
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-background-color: linear-gradient(to bottom left, #497b90, #497b90, #cde3e6);
+}
+
+.radius{
+    -fx-border-radius: 100;
+    -fx-background-radius: 100;
+}
+
+.border-color{
+    -fx-border-color: white;
+}

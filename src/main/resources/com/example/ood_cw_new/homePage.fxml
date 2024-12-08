@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #497b90;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ood_cw_new.HomePageController">
+    <top>
+        <HBox prefHeight="100.0" prefWidth="1000.0" style="-fx-background-color: #26585e;" BorderPane.alignment="CENTER">
+            <children>
+                <VBox prefHeight="100.0" prefWidth="1000.0">
+                    <children>
+                        <HBox prefHeight="62.0" prefWidth="200.0" styleClass="border-color" stylesheets="@CSS/Style.css">
+                            <children>
+                                <Label prefHeight="60.0" prefWidth="565.0" text="Personalized News Recommendation System" textFill="WHITE">
+                                    <font>
+                                        <Font name="Cooper Black" size="24.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="250.0" right="50.0" />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="10.0" prefHeight="62.0" prefWidth="200.0">
+                            <children>
+                                <Label alignment="CENTER" prefHeight="25.0" prefWidth="72.0" text="Search" textFill="WHITE">
+                                    <font>
+                                        <Font name="Cambria Bold" size="14.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="200.0" top="10.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <TextField prefHeight="25.0" prefWidth="530.0">
+                                    <HBox.margin>
+                                        <Insets top="10.0" />
+                                    </HBox.margin>
+                                </TextField>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </top>
+    <left>
+        <VBox prefHeight="600.0" prefWidth="176.0" style="-fx-background-color: #26585e;" styleClass="border-color" stylesheets="@CSS/Style.css" BorderPane.alignment="CENTER">
+            <children>
+            <HBox layoutX="11.0" layoutY="11.0" prefHeight="60.0" prefWidth="150.0">
+               <children>
+                  <ImageView fx:id="homeImg" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/icons8-home-50.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="18.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Button fx:id="homeBtn" alignment="CENTER" mnemonicParsing="false" onAction="#homeBtnOnAction" prefHeight="60.0" prefWidth="107.0" style="-fx-background-color: #26585e;" text="Home" textFill="WHITE">
+                     <font>
+                        <Font name="Cooper Black" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </HBox>
+                <HBox layoutX="10.0" layoutY="340.0" prefHeight="60.0" prefWidth="150.0">
+                    <children>
+                        <ImageView fx:id="forYouImg" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@Images/icons8-for-you-48.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets top="18.0" />
+                            </HBox.margin>
+                        </ImageView>
+                        <Button fx:id="forYouBtn" alignment="CENTER" mnemonicParsing="false" onAction="#forYouBtnOnAction" prefHeight="60.0" prefWidth="107.0" style="-fx-background-color: #26585e;" text="For You" textFill="WHITE">
+                            <font>
+                                <Font name="Cooper Black" size="16.0" />
+                            </font>
+                        </Button>
+                    </children>
+                    <padding>
+                        <Insets left="20.0" />
+                    </padding>
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="400.0" prefHeight="60.0" prefWidth="150.0">
+                    <children>
+                        <ImageView fx:id="likeImg" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@Images/icons8-heart-24.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets top="18.0" />
+                            </HBox.margin>
+                        </ImageView>
+                        <Button fx:id="likedBtn" alignment="CENTER" mnemonicParsing="false" onAction="#likedBtnOnAction" prefHeight="60.0" prefWidth="109.0" style="-fx-background-color: #26585e;" text="Liked" textFill="WHITE">
+                            <font>
+                                <Font name="Cooper Black" size="16.0" />
+                            </font>
+                        </Button>
+                    </children>
+                    <padding>
+                        <Insets left="20.0" />
+                    </padding>
+                </HBox>
+                <Button fx:id="profileBtn" mnemonicParsing="false" onAction="#profileBtnOnAction" prefHeight="40.0" prefWidth="56.0" style="-fx-background-color: #26585e;">
+                    <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="40.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@Images/icons8-administrator-male-48.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <VBox.margin>
+                        <Insets left="50.0" top="350.0" />
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+    </left>
+
+    <center>
+        <Pane fx:id="backPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <Pane prefHeight="600.0" prefWidth="825.0">
+            <children>
+               <GridPane fx:id="mainGridPane" gridLinesVisible="true" prefHeight="600.0" prefWidth="825.0" styleClass="homepage-pane" stylesheets="@CSS/Style.css">
+                  <columnConstraints>
+                     <ColumnConstraints minWidth="10.0" prefWidth="420.0" />
+                     <ColumnConstraints minWidth="10.0" prefWidth="420.0" />
+                  </columnConstraints>
+                  <children>
+                     <VBox prefHeight="200.0" prefWidth="100.0">
+                        <children>
+                           <Button fx:id="businessCatBtn" onAction="#businessCatBtnOnAction" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="412.0" style="-fx-background-color: transparent" text=" Business" textFill="WHITE">
+                              <graphic>
+                                 <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                       <Image url="@Images/icons8-increase-100.png" />
+                                    </image>
+                                 </ImageView>
+                              </graphic>
+                              <font>
+                                 <Font name="Impact" size="36.0" />
+                              </font>
+                           </Button>
+                        </children>
+                     </VBox>
+                     <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+                        <children>
+                           <Button fx:id="healthCatBtn" onAction="#healthCatBtnOnAction" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="412.0" style="-fx-background-color: transparent" text="Health" textFill="WHITE">
+                              <font>
+                                 <Font name="Impact" size="36.0" />
+                              </font>
+                              <graphic>
+                                 <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                       <Image url="@Images/icons8-health-100.png" />
+                                    </image>
+                                 </ImageView>
+                              </graphic>
+                           </Button>
+                        </children>
+                     </VBox>
+                     <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                        <children>
+                           <Button fx:id="entCatBtn" onAction="#entCatBtnOnAction" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="412.0" style="-fx-background-color: transparent" text="Entertainment" textFill="WHITE">
+                              <font>
+                                 <Font name="Impact" size="36.0" />
+                              </font>
+                              <graphic>
+                                 <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                       <Image url="@Images/icons8-entertainment-100.png" />
+                                    </image>
+                                 </ImageView>
+                              </graphic>
+                           </Button>
+                        </children>
+                     </VBox>
+                     <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                        <children>
+                           <Button fx:id="sportsCatBtn" onAction="#sportsCatBtnOnAction" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="412.0" style="-fx-background-color: transparent" text="Sports" textFill="WHITE">
+                              <font>
+                                 <Font name="Impact" size="36.0" />
+                              </font>
+                              <graphic>
+                                 <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                       <Image url="@Images/icons8-exercise-skin-type-1-100.png" />
+                                    </image>
+                                 </ImageView>
+                              </graphic>
+                           </Button>
+                        </children>
+                     </VBox>
+                     <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
+                        <children>
+                           <Button fx:id="technoCatBtn" onAction="#technoCatBtnOnAction" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="412.0" style="-fx-background-color: transparent" text="Technology" textFill="WHITE">
+                              <font>
+                                 <Font name="Impact" size="36.0" />
+                              </font>
+                              <graphic>
+                                 <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                       <Image url="@Images/icons8-technology-100.png" />
+                                    </image>
+                                 </ImageView>
+                              </graphic>
+                           </Button>
+                        </children>
+                     </VBox>
+                     <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                        <children>
+                           <Button fx:id="scienceCatBtn" onAction="#scienceCatBtnOnAction" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="412.0" style="-fx-background-color: transparent" text="Science" textFill="WHITE">
+                              <font>
+                                 <Font name="Impact" size="36.0" />
+                              </font>
+                              <graphic>
+                                 <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                       <Image url="@Images/icons8-lab-items-100.png" />
+                                    </image>
+                                 </ImageView>
+                              </graphic>
+                           </Button>
+                        </children>
+                     </VBox>
+                  </children>
+                  <rowConstraints>
+                     <RowConstraints maxHeight="200.0" minHeight="200.0" prefHeight="200.0" />
+                     <RowConstraints maxHeight="200.0" minHeight="200.0" prefHeight="200.0" />
+                     <RowConstraints maxHeight="200.0" minHeight="200.0" prefHeight="200.0" />
+                  </rowConstraints>
+               </GridPane>
+            </children>
+         </Pane>
+            <ScrollPane fx:id="scrollPane" prefHeight="570.0" prefWidth="824.0" visible="false" BorderPane.alignment="CENTER">
+                <content>
+                    <GridPane fx:id="gridPane" gridLinesVisible="true" prefHeight="0.0" prefWidth="840.0">
+                        <columnConstraints>
+                            <ColumnConstraints minWidth="10.0" prefWidth="420.0" />
+                            <ColumnConstraints minWidth="10.0" prefWidth="420.0" />
+                        </columnConstraints>
+                    </GridPane>
+                </content>
+            </ScrollPane>
+         <HBox fx:id="pageBox" alignment="CENTER" layoutY="570.0" prefHeight="30.0" prefWidth="824.0" spacing="10.0" style="-fx-background-color: white;" visible="false">
+            <children>
+               <Button fx:id="backwardBtn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#backwardBtnOnAction" opacity="0.85" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #26585e;" styleClass="button-radius" stylesheets="@CSS/Style.css" text="&lt;&lt;" textFill="WHITE">
+                  <font>
+                     <Font name="Arial Black" size="8.0" />
+                  </font>
+               </Button>
+               <Label fx:id="pageLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="60.0" text="Page">
+                  <font>
+                     <Font name="Cooper Black" size="12.0" />
+                  </font>
+               </Label>
+               <Button fx:id="forwardBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="388.0" layoutY="13.0" mnemonicParsing="false" onAction="#forwardBtnOnAction" opacity="0.85" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #26585e;" styleClass="button-radius" stylesheets="@CSS/Style.css" text="&gt;&gt;" textFill="WHITE">
+                  <font>
+                     <Font name="Arial Black" size="8.0" />
+                  </font>
+               </Button>
+            </children>
+         </HBox>
+        </Pane>
+
+    </center>
+</BorderPane>

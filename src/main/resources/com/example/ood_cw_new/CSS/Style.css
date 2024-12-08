@@ -1,0 +1,33 @@
+.pane {
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-background-color: linear-gradient(to bottom left, #497b90, #497b90, #cde3e6);
+}
+
+.radius{
+    -fx-border-radius: 50;
+    -fx-background-radius: 50;
+}
+
+.border-color{
+    -fx-border-color: white;
+}
+
+
+.img{
+    -fx-background-radius: 100;
+    -fx-border-radius: 100;
+}
+
+.button{
+    -fx-background-color: linear-gradient(to right, #26585e, #26585e, #cde3e6);
+}
+
+.button-radius{
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+}
+
+.homepage-pane{
+    -fx-background-color: linear-gradient(to bottom left, #26585e, #497b90, #cde3e6);
+}

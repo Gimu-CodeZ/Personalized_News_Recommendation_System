@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #26585e;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ood_cw_new.ProfileController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="900.0" stylesheets="@CSS/profile.css">
+         <styleClass>
+            <String fx:value="pane" />
+            <String fx:value="border-color" />
+         </styleClass>
+         <children>
+            <Pane layoutX="383.0" layoutY="31.0" prefHeight="150.0" prefWidth="150.0" stylesheets="@CSS/profile.css">
+               <children>
+                  <ImageView fx:id="profileImage" fitHeight="100.0" fitWidth="100.0" layoutX="25.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/icons8-health-100.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="profileImageEditBtn" layoutX="105.0" layoutY="120.0" mnemonicParsing="false" onAction="#profileImageEditBtnOnAction" style="-fx-background-color: #26585e;" styleClass="radius" stylesheets="@CSS/profile.css">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/icons8-edit-24.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <styleClass>
+                  <String fx:value="radius" />
+                  <String fx:value="border-color" />
+               </styleClass>
+            </Pane>
+            <VBox alignment="CENTER" layoutX="100.0" layoutY="250.0" prefHeight="150.0" prefWidth="150.0">
+               <children>
+                  <Label prefHeight="50.0" prefWidth="170.0" text="UserName: " textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="170.0" text="Email:" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="60.0" prefHeight="50.0" prefWidth="170.0" text="Password:" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox layoutX="300.0" layoutY="250.0" prefHeight="150.0" prefWidth="353.0">
+               <children>
+                  <Label fx:id="usernameLbl" prefHeight="50.0" prefWidth="300.0" text="Gimu" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="emailLbl" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="300.0" text="gimurajapakshe2020@gmail.com" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="passwordLbl" layoutX="10.0" layoutY="60.0" prefHeight="50.0" prefWidth="300.0" text="Gimu@123" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox layoutX="674.0" layoutY="250.0" prefHeight="150.0" prefWidth="150.0" spacing="20.0">
+               <children>
+                  <Button fx:id="usernameEditBtn" mnemonicParsing="false" style="-fx-background-color: #26585e;" styleClass="radius" stylesheets="@CSS/profile.css">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/icons8-edit-24.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="emailEditBtn" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: #26585e;" styleClass="radius" stylesheets="@CSS/profile.css">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/icons8-edit-24.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="passwordEditBtn" layoutX="10.0" layoutY="42.0" mnemonicParsing="false" style="-fx-background-color: #26585e;" styleClass="radius" stylesheets="@CSS/profile.css">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/icons8-edit-24.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

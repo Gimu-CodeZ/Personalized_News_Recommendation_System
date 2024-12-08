@@ -1,0 +1,26 @@
+.vertical-tab-pane .tab-header-area {
+    -fx-background-color: #eeeeee;
+    -fx-padding: 10;
+    -fx-alignment: CENTER;
+}
+
+.vertical-tab-pane .tab {
+    -fx-background-color: #f0f0f0;
+    -fx-text-fill: #000;
+    -fx-padding: 10;
+    -fx-pref-width: 180px;
+    -fx-pref-height: 50px;
+}
+
+.vertical-tab-pane .tab:hover {
+    -fx-background-color: #dcdcdc;
+}
+
+.vertical-tab-pane .tab:selected {
+    -fx-background-color: #b0b0b0;
+    -fx-text-fill: #ffffff;
+}
+
+.vertical-tab-pane .tab-header-area {
+    -fx-orientation: vertical;
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="700.0" style="-fx-background-color: #497b90;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ood_cw_new.ArticlePopUpController">
+    <children>
+        <ScrollPane fx:id="detailsScrollPane" layoutY="250.0" prefHeight="300.0" prefWidth="700.0" />
+      <VBox fx:id="headerVbox" prefHeight="250.0" prefWidth="700.0" spacing="10">
+         <children>
+              <Label fx:id="titleLabel" alignment="CENTER" contentDisplay="CENTER" prefWidth="700.0" textFill="WHITE">
+                  <font>
+                      <Font name="Cooper Black" size="24.0" />
+                  </font>
+              </Label>
+              <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>
